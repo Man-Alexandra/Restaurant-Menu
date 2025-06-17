@@ -1,0 +1,255 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>Restaurant_Menu</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images\apple-crisp.jpg" />
+    <None Remove="images\apple-muffin.jpg" />
+    <None Remove="images\baked_salmon.jpg" />
+    <None Remove="images\banana-bread.jpg" />
+    <None Remove="images\banana-cream.jpg" />
+    <None Remove="images\beef_stroganoff.jpg" />
+    <None Remove="images\blueberry-iced.jpg" />
+    <None Remove="images\bruschetta.jpg" />
+    <None Remove="images\caesar_salad.jpg" />
+    <None Remove="images\cajun-pasta.jpg" />
+    <None Remove="images\caprese-pasta.jpg" />
+    <None Remove="images\caprese_salad.jpg" />
+    <None Remove="images\carrot-cake.jpg" />
+    <None Remove="images\cherry-cold-brew.jpg" />
+    <None Remove="images\chicken_alfredo.jpg" />
+    <None Remove="images\chicken_wings.jpg" />
+    <None Remove="images\chocolate-cookie.jpg" />
+    <None Remove="images\chocolate-muffin.jpg" />
+    <None Remove="images\chocolate_cake.jpg" />
+    <None Remove="images\cinnamon-muffin.jpg" />
+    <None Remove="images\citrus-coffee.jpg" />
+    <None Remove="images\coffee-muffin.jpg" />
+    <None Remove="images\cola.jpg" />
+    <None Remove="images\cookie-butter-latte.jpg" />
+    <None Remove="images\croissant.jpg" />
+    <None Remove="images\deviled_eggs.jpg" />
+    <None Remove="images\duck-confit.jpg" />
+    <None Remove="images\eggplant_parmesan.jpg" />
+    <None Remove="images\fried_calamari.jpg" />
+    <None Remove="images\garlic-shrimp.jpg" />
+    <None Remove="images\garlic_bread.jpg" />
+    <None Remove="images\grilled_chicken.jpg" />
+    <None Remove="images\home-page.jpg" />
+    <None Remove="images\horchata-cold-brew.jpg" />
+    <None Remove="images\hot-mocha.jpg" />
+    <None Remove="images\iced-biscof.jpg" />
+    <None Remove="images\iced-cherry-chai.jpg" />
+    <None Remove="images\iced-vanilla.jpg" />
+    <None Remove="images\lamb_chops.jpg" />
+    <None Remove="images\latte.jpg" />
+    <None Remove="images\love-potion.jpg" />
+    <None Remove="images\mozzarella_sticks.jpg" />
+    <None Remove="images\mushroom-coffee.jpg" />
+    <None Remove="images\next.png" />
+    <None Remove="images\onion-pasta.jpg" />
+    <None Remove="images\pasta_carbonara.jpg" />
+    <None Remove="images\pesto-grilled.jpg" />
+    <None Remove="images\prev.png" />
+    <None Remove="images\raspberry-muffin.jpg" />
+    <None Remove="images\seafood_paella.jpg" />
+    <None Remove="images\search-icon.png" />
+    <None Remove="images\spinach_artichoke_dip.jpg" />
+    <None Remove="images\steak-garlic.jpg" />
+    <None Remove="images\stuffed_mushrooms.jpg" />
+    <None Remove="images\turkey_meatballs.jpg" />
+    <None Remove="images\vanilla-muffin.jpg" />
+    <None Remove="images\vanilla-sweet-cream.jpg" />
+    <None Remove="images\vegetable_stir_fry.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="images\baked_salmon.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\banana-cream.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\beef_stroganoff.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\caprese_salad.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\chicken_alfredo.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\chicken_wings.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\chocolate_cake.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\citrus-coffee.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\cola.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\cookie-butter-latte.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\deviled_eggs.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\eggplant_parmesan.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\fried_calamari.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\grilled_chicken.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\horchata-cold-brew.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\hot-mocha.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\iced-biscof.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\iced-cherry-chai.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\iced-vanilla.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\lamb_chops.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\latte.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\love-potion.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\mozzarella_sticks.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\mushroom-coffee.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\pasta_carbonara.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\raspberry-muffin.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\seafood_paella.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\spinach_artichoke_dip.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\stuffed_mushrooms.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="images\apple-crisp.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\apple-muffin.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\banana-bread.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\blueberry-iced.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\bruschetta.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\caesar_salad.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\cajun-pasta.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\caprese-pasta.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carrot-cake.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\cherry-cold-brew.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\chocolate-cookie.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\chocolate-muffin.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\cinnamon-muffin.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\coffee-muffin.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\croissant.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\duck-confit.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\garlic-shrimp.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\garlic_bread.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\home-page.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\next.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\onion-pasta.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\pesto-grilled.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\prev.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\search-icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\steak-garlic.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\turkey_meatballs.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\vanilla-sweet-cream.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\vegetable_stir_fry.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql" Version="9.0.3" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
+  </ItemGroup>
+
+</Project>

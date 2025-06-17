@@ -1,0 +1,92 @@
+﻿<Window x:Class="Restaurant_Menu.MenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Restaurant_Menu"
+        mc:Ignorable="d"
+        Title="MenuWindow" Height="750" Width="1000"
+        Background="#e5dedc" ResizeMode="CanMinimize">
+
+    <Grid>
+        <!-- 3 Main Rows: Navbar, Image, Content -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <!-- Navbar -->
+            <RowDefinition Height="300"/>
+            <!-- Image -->
+            <RowDefinition Height="*"/>
+            <!-- Buttons and text -->
+        </Grid.RowDefinitions>
+
+        <!-- Navbar -->
+        <Grid Grid.Row="0" Background="#4f3930">
+            <TextBlock Text="Restaurant" 
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Foreground="White" 
+                       FontSize="20" 
+                       Margin="20,0,0,0" />
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right"
+                        Margin="0,0,20,0">
+                <Button Content="Home"
+                        Width="80"
+                        Height="30"
+                        Margin="5"
+                        Foreground="White" 
+                        Background="Transparent"
+                        FontSize="15"
+                        Click="HomeButton_Click"
+                        BorderBrush="Transparent" />
+
+                <Border Background="White" CornerRadius="3" Height="30" Margin="5" VerticalAlignment="Center">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="./images/search-icon.png"
+                               Width="16" Height="16"
+                               Margin="7"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center" />
+
+                        <TextBox Grid.Column="1"
+                                 Background="Transparent"
+                                 BorderThickness="0"
+                                 FontSize="14"
+                                 Foreground="Black"
+                                 VerticalContentAlignment="Center"
+                                 Padding="5,0,5,0"
+                                 Width="150"/>
+                    </Grid>
+                </Border>
+            </StackPanel>
+        </Grid>
+
+        <!-- Image Row -->
+        <Image Grid.Row="1"
+               Source="./images/home-page.jpg"
+               Stretch="UniformToFill"
+               Width="1000"
+               Height="420" />
+
+        <!-- Text and Buttons -->
+        <StackPanel Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,30,0,0">
+            <TextBlock Text="Select a Menu Category"
+                       FontSize="28"
+                       FontWeight="Bold"
+                       Foreground="#4f3930"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,20"/>
+
+            <Button Content="Appetizers" Width="200" Height="40" Margin="0,5" Click="Category_Click" Tag="Appetizers" Background="#d6beaf" BorderThickness="0"/>
+            <Button Content="Main Courses" Width="200" Height="40" Margin="0,5" Click="Category_Click" Tag="MainCourses" Background="#d6beaf" BorderThickness="0"/>
+            <Button Content="Desserts" Width="200" Height="40" Margin="0,5" Click="Category_Click" Tag="Desserts" Background="#d6beaf" BorderThickness="0"/>
+            <Button Content="Drinks" Width="200" Height="40" Margin="0,5" Click="Category_Click" Tag="Drinks" Background="#d6beaf" BorderThickness="0"/>
+            <Button Content="Menus" Width="200" Height="40" Margin="0,5" Click="Category_Click" Tag="Menus" Background="#d6beaf" BorderThickness="0"/>
+        </StackPanel>
+    </Grid>
+</Window>
